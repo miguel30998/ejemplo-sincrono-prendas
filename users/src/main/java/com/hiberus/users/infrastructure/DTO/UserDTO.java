@@ -1,4 +1,4 @@
-package com.hiberus.users.infrastructure.adapter.out.persistence;
+package com.hiberus.users.infrastructure.DTO;
 
 import lombok.Getter;
 

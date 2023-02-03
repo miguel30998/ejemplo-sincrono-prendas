@@ -123,4 +123,26 @@ public class ClothingControllerImpl implements ClothingController {
         }
         return new ResponseEntity<>(gson.toJson(garment), HttpStatus.OK);
     }
+
+    @Override
+    public ResponseEntity<String> buy(String garmentIdentifier) {
+        Garment garment;
+        boolean succesfull;
+        try {
+            garment = getGarmentByIDUseCase.getGarment(garmentIdentifier);
+            if(garment == null){
+                return new ResponseEntity<>(gson.toJson("Not found"), HttpStatus.NOT_FOUND);
+            }
+            if(garment.getQuantity() == 0){
+                return new ResponseEntity<>(gson.toJson("Not enough"), HttpStatus.BAD_REQUEST);
+            }
+            succesfull = upgradeDowngradeQuantityUseCase.downgrade(garment);
+            if(!succesfull){
+                return new ResponseEntity<>(gson.toJson("Error upgrading"), HttpStatus.BAD_REQUEST);
+            }
+        }catch (Exception e){
+            return new ResponseEntity<>(gson.toJson(e.getMessage()), HttpStatus.BAD_REQUEST);
+        }
+        return new ResponseEntity<>(gson.toJson(garment), HttpStatus.OK);
+    }
 }

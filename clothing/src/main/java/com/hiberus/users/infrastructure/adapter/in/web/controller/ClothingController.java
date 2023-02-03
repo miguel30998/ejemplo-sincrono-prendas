@@ -70,4 +70,15 @@ public interface ClothingController {
     })
     @PutMapping(value="/clothing/downgrade_quantity", produces = "application/json")
     ResponseEntity<String> downgradeQuantity(@RequestBody GarmentIdentifierDTO garmentIdentifierDTO);
+
+    @ApiOperation(value="Realizar una compra")
+    @ApiResponses({
+            @ApiResponse(code = 200, message = "Articulo comprado con exito"),
+            @ApiResponse(code = 404, message = "No existe"),
+            @ApiResponse(code = 400, message = "Error"),
+            @ApiResponse(code = 400, message = "Cantidad insuficiente")
+
+    })
+    @PutMapping(value="/clothing/buy/{garmentIdentifier}", produces = "application/json")
+    ResponseEntity<String> buy(@RequestParam String garmentIdentifier);
 }

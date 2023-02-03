@@ -3,7 +3,9 @@ package com.hiberus.users.infrastructure.adapter.in.web.controller;
 import com.google.gson.Gson;
 import com.hiberus.users.domain.model.User;
 import com.hiberus.users.domain.ports.in.*;
-import com.hiberus.users.infrastructure.adapter.out.persistence.UserDTO;
+import com.hiberus.users.infrastructure.DTO.GarmentDTO;
+import com.hiberus.users.infrastructure.DTO.PurchasesDTO;
+import com.hiberus.users.infrastructure.DTO.UserDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,6 +24,8 @@ public class UserControllerImpl implements UserController {
     private final GetUserByIDUseCase getUserByIDUseCase;
 
     private final UpdateNameUseCase updateNameUseCase;
+
+    private final GetClothUseCase getClothUseCase;
     private Gson gson = new Gson();
 
     @Override
@@ -98,6 +102,20 @@ public class UserControllerImpl implements UserController {
             return new ResponseEntity<>(gson.toJson(e.getMessage()), HttpStatus.BAD_REQUEST);
         }
         return new ResponseEntity<>(gson.toJson(user), HttpStatus.OK);
+    }
+    @Override
+    public ResponseEntity<String> buy(PurchasesDTO purchasesDTO) {
+        User user;
+        try {
+            user = getUserByIDUseCase.getUser(purchasesDTO.getDni());
+            if(user == null){
+                return new ResponseEntity<>(gson.toJson("User does not exist"), HttpStatus.NOT_FOUND);
+            }
+            GarmentDTO garmentDTO= getClothUseCase.getCloth(purchasesDTO.getClothId());
+        }catch (Exception e){
+            return new ResponseEntity<>(gson.toJson(e.getMessage()), HttpStatus.BAD_REQUEST);
+        }
+        return new ResponseEntity<>(gson.toJson("hola"), HttpStatus.OK);
     }
 
 }

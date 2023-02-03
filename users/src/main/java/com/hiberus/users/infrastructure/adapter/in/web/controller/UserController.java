@@ -1,13 +1,12 @@
 package com.hiberus.users.infrastructure.adapter.in.web.controller;
 
-import com.hiberus.users.infrastructure.adapter.out.persistence.UserDTO;
+import com.hiberus.users.infrastructure.DTO.PurchasesDTO;
+import com.hiberus.users.infrastructure.DTO.UserDTO;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import javax.ws.rs.QueryParam;
 
 @RestController
 public interface UserController {
@@ -57,6 +56,17 @@ public interface UserController {
     })
     @PutMapping(value = "/users", produces = "application/json")
     ResponseEntity<String> updateName(@RequestBody UserDTO userDTO);
+
+    @ApiOperation(value="Comprar un producto")
+    @ApiResponses({
+            @ApiResponse(code = 200, message = "Comprado con exito"),
+            @ApiResponse(code = 404, message = "No existe"),
+            @ApiResponse(code = 400, message = "Error"),
+            @ApiResponse(code = 400, message = "Cantidad insuficiente")
+
+    })
+    @PostMapping(value="/clothing/buy", produces = "application/json")
+    ResponseEntity<String> buy(@RequestBody PurchasesDTO purchasesDTO);
 }
 
 
