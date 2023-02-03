@@ -1,1 +1,0 @@
-INSERT INTO clothing (id,base_price,description,family,name) VALUES ('REF-12345-678',20,'Vaqueros','Vaqueros','Pantalones');

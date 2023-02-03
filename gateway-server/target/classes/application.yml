@@ -3,22 +3,12 @@ spring:
     gateway:
       routes:
         - id: clothing
-          uri: lb://clothing
+          # si se despliega en docker: uri: lb://clothing
+          uri: http://localhost:8081
           predicates:
             - Path=/clothing/**
-        - id: resources
-          uri: lb://resources
+        - id: users
+          # si se despliega en docker: uri: lb://users
+          uri: http://localhost:8082
           predicates:
-            - Path=/resources/**
-        - id: inventory
-          uri: lb://inventory
-          predicates:
-            - Path=/inventory/**
-        - id: customization
-          uri: lb://customization
-          predicates:
-            - Path=/customization/**
-        - id: stock
-          uri: lb://stock
-          predicates:
-            - Path=/stock/**
+            - Path=/users/**

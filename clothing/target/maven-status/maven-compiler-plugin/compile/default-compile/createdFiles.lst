@@ -1,0 +1,14 @@
+com/hiberus/ClothingApplication.class
+com/hiberus/clothing/domain/ports/out/GetGarmentPort.class
+com/hiberus/clothing/infrastructure/adapter/out/persistence/GarmentPersistenceAdapter.class
+com/hiberus/clothing/domain/ports/in/CreateGarmentUseCase.class
+com/hiberus/clothing/SwaggerConfig.class
+com/hiberus/clothing/infrastructure/adapter/out/persistence/GarmentRepository.class
+com/hiberus/clothing/application/services/CreateGarment.class
+com/hiberus/clothing/infrastructure/adapter/out/persistence/GarmentMapper.class
+com/hiberus/clothing/infrastructure/adapter/out/persistence/GarmentDTO.class
+com/hiberus/clothing/domain/model/Garment.class
+com/hiberus/clothing/domain/model/Size.class
+com/hiberus/clothing/infrastructure/adapter/in/web/controller/ClothingControllerImpl.class
+com/hiberus/clothing/infrastructure/adapter/out/persistence/GarmentEntity.class
+com/hiberus/clothing/infrastructure/adapter/in/web/controller/ClothingController.class
