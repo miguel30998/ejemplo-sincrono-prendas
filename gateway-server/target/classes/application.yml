@@ -1,0 +1,24 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: clothing
+          uri: lb://clothing
+          predicates:
+            - Path=/clothing/**
+        - id: resources
+          uri: lb://resources
+          predicates:
+            - Path=/resources/**
+        - id: inventory
+          uri: lb://inventory
+          predicates:
+            - Path=/inventory/**
+        - id: customization
+          uri: lb://customization
+          predicates:
+            - Path=/customization/**
+        - id: stock
+          uri: lb://stock
+          predicates:
+            - Path=/stock/**

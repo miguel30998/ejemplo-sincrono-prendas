@@ -1,0 +1,74 @@
+version: '3'
+
+services:
+  #clothing:
+  #  build: ./clothing
+  #  ports:
+  #    - "8081:8081"
+  #  environment:
+  #    - "clothing-db=clothing-db"
+  #    - "URL_DEFAULT_ZONE=http://eureka-server:8761/eureka"
+  #    - "CONFIG_SERVER=config-server"
+  #    - "EUREKA_SERVER=eureka-server"
+  #  restart: always
+  #  depends_on:
+  #    - config-server
+
+  #users:
+  #  build: ./users
+  #  ports:
+  #    - "8080:8080"
+  #  environment:
+  #    - "users-db=users-db"
+  #    - "URL_DEFAULT_ZONE=http://eureka-server:8761/eureka"
+  #    - "CONFIG_SERVER=config-server"
+  #    - "EUREKA_SERVER=eureka-server"
+  #    - "gateway-host=gateway-server"
+  #  restart: always
+  #  depends_on:
+  #    - config-server
+
+  config-server:
+    build: ./config-server
+    hostname: config-server
+    ports:
+      - "8888:8888"
+    restart: always
+
+  eureka-server:
+    build: ./eureka-server
+    hostname: eureka-server
+    ports:
+      - "8761:8761"
+  gateway-server:
+    build: ./gateway-server
+    hostname: gateway-server
+    ports:
+      - "8090:8090"
+    environment:
+      - "EUREKA_SERVER=eureka-server"
+  clothing-db:
+    image: mysql
+    ports:
+      - "3308:3306"
+    volumes:
+      - volumen-clothing:/var/lib/mysql
+    environment:
+      - "MYSQL_DATABASE=clothing-db"
+      - "MYSQL_ROOT_PASSWORD=12345"
+  users-db:
+    image: mysql
+    ports:
+      - "3307:3306"
+    volumes:
+      - volumen-users:/var/lib/mysql
+    environment:
+      - "MYSQL_DATABASE=users-db"
+      - "MYSQL_ROOT_PASSWORD=12345"
+
+volumes:
+  volumen-clothing:
+  volumen-users:
+
+networks:
+  local:
