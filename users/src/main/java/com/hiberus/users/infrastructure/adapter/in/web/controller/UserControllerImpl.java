@@ -106,16 +106,17 @@ public class UserControllerImpl implements UserController {
     @Override
     public ResponseEntity<String> buy(PurchasesDTO purchasesDTO) {
         User user;
+        GarmentDTO garmentDTO;
         try {
             user = getUserByIDUseCase.getUser(purchasesDTO.getDni());
             if(user == null){
                 return new ResponseEntity<>(gson.toJson("User does not exist"), HttpStatus.NOT_FOUND);
             }
-            GarmentDTO garmentDTO= getClothUseCase.getCloth(purchasesDTO.getClothId());
+            garmentDTO= getClothUseCase.getCloth(purchasesDTO.getClothId());
         }catch (Exception e){
             return new ResponseEntity<>(gson.toJson(e.getMessage()), HttpStatus.BAD_REQUEST);
         }
-        return new ResponseEntity<>(gson.toJson("hola"), HttpStatus.OK);
+        return new ResponseEntity<>(gson.toJson(garmentDTO), HttpStatus.OK);
     }
 
 }

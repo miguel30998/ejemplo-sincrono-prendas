@@ -15,7 +15,7 @@ public class SwaggerConfig {
 
     private static final String TITLE = "Clothing API";
     private static final String DESCRIPTION = "API para gestionar prendas";
-    private static final String BASE_PACKAGE = "com.hiberus.clothing.infrastructure.adapter.in.web.controller";
+    private static final String BASE_PACKAGE = "com.hiberus.users.infrastructure.adapter.in.web.controller";
     private static final String VERSION = "v1";
 
     @Bean

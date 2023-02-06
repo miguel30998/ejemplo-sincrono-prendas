@@ -3,9 +3,8 @@ package com.hiberus.users.infrastructure.adapter.out.persistence;
 import com.hiberus.users.domain.ports.out.ClothPort;
 import com.hiberus.users.infrastructure.DTO.GarmentDTO;
 import lombok.RequiredArgsConstructor;
-import org.springframework.context.annotation.Bean;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 @RequiredArgsConstructor
 @Component
@@ -15,6 +14,16 @@ public class ClothAdapter implements ClothPort {
 
     @Override
     public GarmentDTO getCloth(String id) {
-        return clothClient.buy(id);
+        ResponseEntity<?>cloth=clothClient.buy(id);
+        if(cloth.getStatusCode().is2xxSuccessful()){
+            return (GarmentDTO) cloth.getBody();
+        }
+        if(cloth.getStatusCode().is4xxClientError()){
+            throw new RuntimeException("Garment not found");
+        }
+        if(cloth.getStatusCode().is5xxServerError()){
+            throw new RuntimeException("Internal server error");
+        }
+        throw new RuntimeException();
     }
 }

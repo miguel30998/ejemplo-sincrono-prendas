@@ -65,7 +65,7 @@ public interface UserController {
             @ApiResponse(code = 400, message = "Cantidad insuficiente")
 
     })
-    @PostMapping(value="/clothing/buy", produces = "application/json")
+    @PostMapping(value="/users/buy", produces = "application/json")
     ResponseEntity<String> buy(@RequestBody PurchasesDTO purchasesDTO);
 }
 

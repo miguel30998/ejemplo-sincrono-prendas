@@ -5,30 +5,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="563a40bb-d2a2-4fb4-9445-3f55e55845a8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/users/src/main/java/com/hiberus/users/application/services/GetCloth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/src/main/java/com/hiberus/users/domain/model/Size.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/src/main/java/com/hiberus/users/domain/ports/in/GetClothUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/src/main/java/com/hiberus/users/domain/ports/out/ClothPort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/src/main/java/com/hiberus/users/infrastructure/DTO/GarmentDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/src/main/java/com/hiberus/users/infrastructure/DTO/PurchasesDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/src/main/java/com/hiberus/users/infrastructure/adapter/out/persistence/ClothAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/src/main/java/com/hiberus/users/infrastructure/adapter/out/persistence/ClothClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clothing/src/main/java/com/hiberus/ClothingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/clothing/src/main/java/com/hiberus/ClothingApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clothing/src/main/java/com/hiberus/users/infrastructure/adapter/in/web/controller/ClothingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/clothing/src/main/java/com/hiberus/users/infrastructure/adapter/in/web/controller/ClothingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clothing/src/main/java/com/hiberus/users/infrastructure/adapter/in/web/controller/ClothingControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/clothing/src/main/java/com/hiberus/users/infrastructure/adapter/in/web/controller/ClothingControllerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothing/src/main/java/com/hiberus/users/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/clothing/src/main/java/com/hiberus/users/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothing/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/clothing/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/ClothingApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/ClothingApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/SwaggerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/SwaggerConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/application/services/CreateGarment.class" beforeDir="false" afterPath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/application/services/CreateGarment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/application/services/DeleteGarment.class" beforeDir="false" afterPath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/application/services/DeleteGarment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/application/services/GetClothing.class" beforeDir="false" afterPath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/application/services/GetClothing.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/application/services/GetGarmentByID.class" beforeDir="false" afterPath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/application/services/GetGarmentByID.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/application/services/UpgradeDowngradeQuantity.class" beforeDir="false" afterPath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/application/services/UpgradeDowngradeQuantity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/domain/model/Garment.class" beforeDir="false" afterPath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/domain/model/Garment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/domain/model/Size.class" beforeDir="false" afterPath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/domain/model/Size.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/domain/ports/in/CreateGarmentUseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/domain/ports/in/CreateGarmentUseCase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/domain/ports/in/DeleteGarmentUseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/domain/ports/in/DeleteGarmentUseCase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/domain/ports/in/GetClothingUseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/domain/ports/in/GetClothingUseCase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/domain/ports/in/GetGarmentByIDUseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/domain/ports/in/GetGarmentByIDUseCase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/domain/ports/in/UpgradeDowngradeQuantityUseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/domain/ports/in/UpgradeDowngradeQuantityUseCase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/domain/ports/out/GarmentPort.class" beforeDir="false" afterPath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/domain/ports/out/GarmentPort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/infrastructure/DTO/GarmentDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/infrastructure/DTO/GarmentDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/infrastructure/DTO/GarmentIdentifierDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/infrastructure/DTO/GarmentIdentifierDTO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/infrastructure/adapter/in/web/controller/ClothingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/infrastructure/adapter/in/web/controller/ClothingController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/infrastructure/adapter/in/web/controller/ClothingControllerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/infrastructure/adapter/in/web/controller/ClothingControllerImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/src/main/java/com/hiberus/UsersApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/users/src/main/java/com/hiberus/UsersApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/infrastructure/adapter/out/persistence/GarmentEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/infrastructure/adapter/out/persistence/GarmentEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/infrastructure/adapter/out/persistence/GarmentMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/infrastructure/adapter/out/persistence/GarmentMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/infrastructure/adapter/out/persistence/GarmentPersistenceAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/infrastructure/adapter/out/persistence/GarmentPersistenceAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/infrastructure/adapter/out/persistence/GarmentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/clothing/target/classes/com/hiberus/users/infrastructure/adapter/out/persistence/GarmentRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/src/main/java/com/hiberus/users/infrastructure/adapter/in/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/users/src/main/java/com/hiberus/users/infrastructure/adapter/in/web/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/src/main/java/com/hiberus/users/infrastructure/adapter/in/web/controller/UserControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/users/src/main/java/com/hiberus/users/infrastructure/adapter/in/web/controller/UserControllerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/src/main/java/com/hiberus/users/infrastructure/adapter/out/persistence/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/users/src/main/java/com/hiberus/users/infrastructure/DTO/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/target/classes/com/hiberus/UsersApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/hiberus/UsersApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/src/main/java/com/hiberus/users/infrastructure/adapter/out/persistence/ClothAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/users/src/main/java/com/hiberus/users/infrastructure/adapter/out/persistence/ClothAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/src/main/java/com/hiberus/users/infrastructure/adapter/out/persistence/ClothClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/users/src/main/java/com/hiberus/users/infrastructure/adapter/out/persistence/ClothClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/SwaggerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/SwaggerConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/application/services/CreateUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/application/services/CreateUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/application/services/DeleteUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/application/services/DeleteUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/application/services/GetUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/application/services/GetUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/application/services/GetUserByID.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/application/services/GetUserByID.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/application/services/UpdateName.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/application/services/UpdateName.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/domain/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/domain/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/domain/ports/in/CreateUserUseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/domain/ports/in/CreateUserUseCase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/domain/ports/in/DeleteUserUseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/domain/ports/in/DeleteUserUseCase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/domain/ports/in/GetUserByIDUseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/domain/ports/in/GetUserByIDUseCase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/domain/ports/in/GetUserUseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/domain/ports/in/GetUserUseCase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/domain/ports/in/UpdateNameUseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/domain/ports/in/UpdateNameUseCase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/domain/ports/out/UserPort.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/domain/ports/out/UserPort.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/infrastructure/adapter/in/web/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/infrastructure/adapter/in/web/controller/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/infrastructure/adapter/in/web/controller/UserControllerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/infrastructure/adapter/in/web/controller/UserControllerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/infrastructure/adapter/out/persistence/UserEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/infrastructure/adapter/out/persistence/UserEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/infrastructure/adapter/out/persistence/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/infrastructure/adapter/out/persistence/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/infrastructure/adapter/out/persistence/UserPersistenceAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/infrastructure/adapter/out/persistence/UserPersistenceAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/infrastructure/adapter/out/persistence/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/hiberus/users/infrastructure/adapter/out/persistence/UserRepository.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +75,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -62,18 +102,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "corretto-11",
-    "last_opened_file_path": "/home/arcrespo/Proyectos/cursoMicro/ejemplo-sincrono-prendas/images",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/arcrespo/Proyectos/cursoMicro/ejemplo-sincrono-prendas/images&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.hiberus.users.domain.model" />
@@ -196,7 +236,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/users/src/main/java/com/hiberus/users/infrastructure/adapter/in/web/controller/UserControllerImpl.java</url>
-          <line>113</line>
+          <line>114</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
